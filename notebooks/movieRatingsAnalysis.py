@@ -60,7 +60,7 @@ def main(master_node_url,movie_input_file_path, ratings_input_file_path, output_
     
 if __name__ == "__main__":
     if len(sys.argv) != 5:
-        print("Usage: program.py <master_node_url> <movie_input_file_path> <ratings_input_file_path> <output_path>")
+        print("Usage: program.py <master_node_url> <movie_input_file_path> <ratings_input_file_path> <output_path> \n /spark/bin/spark-submit movieRatingsAnalysis.py spark://spark-master:7077 /data/input/movies.csv /data/input/ratings.csv /data/output")
         sys.exit(1)
 
     master_node_url = sys.argv[1];
